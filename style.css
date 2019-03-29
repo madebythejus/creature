@@ -71,6 +71,10 @@ li {
 	object-fit: cover;
 }
 
+.imageHeightControl img{
+	height: 300px;
+}
+
 .imageContainer video {
 	height: 100%;
 	width: 100%;
