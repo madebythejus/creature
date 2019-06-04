@@ -213,18 +213,6 @@ button {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
-button:hover,
-button:focus {
-	background: #1a1a1a;
-	color: white;
-}
-button:focus {
-	outline: 1px solid #fff;
-	outline-offset: -4px;
-}
-button:active {
-	transform: scale(0.99);
-}
 
 .styledButton {
 	background-color: #F7D417;
@@ -238,9 +226,8 @@ button:active {
 /* This applies from 600px inwards - mobile only */
 @media (max-width: 600px) {
 	.styledButton {
-		background-color: white;
 		border-radius: 5px;
-		font-size: 1.5em;
+		font-size: 1em;
 		margin: 10px;
 	}
 }
