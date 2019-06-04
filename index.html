@@ -142,7 +142,7 @@
       </div>
     </div>
   </div>
-  <div class="content blackBack">
+  <div class="content blackBack footer">
     <div class="widthLimiter">
       <div class="verticalSpaceLarge verticalPadding centerText">
         <h2>
@@ -151,14 +151,14 @@
         <h3>
             A playful introduction to these technologies as a child is the first step to further learning, and can make a major impact on a child's interests and career as they grow older. 
         </h3>
-        <button class="styledButton">
+        <!-- <button class="styledButton">
             get in touch
-          </button>
+          </button> -->
       </div>
     </div>
   </div>
 
-  <button class="styledButton topButton">
+  <button id="CTA" class="styledButton topButton">
     get in touch
   </button>
   
@@ -167,7 +167,20 @@
 
 
 
+<script>
+myID = document.getElementById("CTA");
 
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y >= 800) {
+    myID.className = "styledButton topButton show"
+  } else {
+    myID.className = "styledButton topButton hide"
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);
+</script>
 </body>
 
 </html>

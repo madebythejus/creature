@@ -210,8 +210,6 @@ button {
 	font-size: 1rem;
 	cursor: pointer;
 	text-align: center;
-	transition: background 250ms ease-in-out,
-		transform 150ms ease;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
@@ -229,7 +227,7 @@ button:active {
 }
 
 .styledButton {
-	background-color: white;
+	background-color: #F7D417;
 	border-radius: 5px;
 	font-size: 1.7em;
 	margin: 20px;
@@ -250,10 +248,25 @@ button:active {
 
 
 .topButton { 
-	position: fixed; 
-	top: 2rem;  
-	right: 2rem;
-	/* -webkit-transform: translateX(-50%,0);
-	transform: translate(-50%); */
+	position: fixed;
+	bottom: 2rem;  
+	left: 50%;
+	-webkit-transform: translateX(-50%,0);
+	transform: translate(-50%);
 	z-index: 100;
+	transition-property: opacity, bottom;
+	transition-duration: 200ms, 200ms;
+	transition-timing-function: linear;
+}
+
+.show {
+	opacity: 100;
+}
+
+.hide {
+	opacity: 0;
+}
+
+.footer {
+	padding-bottom: 5em;
 }
